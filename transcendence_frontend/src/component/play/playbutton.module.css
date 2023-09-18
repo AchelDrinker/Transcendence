@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+.all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    gap: 10px;
+    position: fixed;
+}
+.play {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 40px;
+    gap: 10px;
+    /* border: inset 2px rgb(0, 217, 255); */
+  }
+
+/* .buttonContainer {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.photo{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.left{
+  width: 50%;
+  height: 92%;
+  background: rgba(60, 200, 255, 0.089);
+  box-shadow: 0 0px 32px 0 rgba(31, 93, 135, 0.37);
+  backdrop-filter: blur( 55px );
+  -webkit-backdrop-filter: blur( 55px );
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.062);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15px;
+ 
+}
+
+.right{
+  width: 50%;
+  height: 92%;
+  background: rgba(60, 200, 255, 0.089);
+  box-shadow: 0 0px 32px 0 rgba(31, 93, 135, 0.37);
+  backdrop-filter: blur( 55px );
+  -webkit-backdrop-filter: blur( 55px );
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.062);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.imageRight{
+  width: 100%;
+  height: 100%;
+  object-fit:cover; 
+}
+.imageLeft{
+  width: 100%;
+  height: 100%;
+  object-fit: fill; 
+}
+
+.imageLeft:hover{
+  border: ridge 5px white;
+  border-radius: 40px;
+  background: rgba(60, 200, 255, 0.089);
+}
+.imageRight:hover{
+  border: ridge 5px white;
+  border-radius: 40px;
+  background: rgba(255, 193, 60, 0.089);
+}
+.normal{
+  font-family: 'Silkscreen', cursive;
+  position: fixed;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 300px;
+  background: -webkit-linear-gradient(left,#0c9df1, rgb(4, 118, 212), rgb(4, 163, 212), rgb(1, 204, 255), rgb(98, 166, 255), rgb(55, 198, 255), rgb(98, 231, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boost{
+  font-family: 'Silkscreen', cursive;
+  position: fixed;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 300px;
+  background: -webkit-linear-gradient(left,#f17b0c, rgb(212, 181, 4), rgb(212, 198, 4), rgb(255, 245, 98), rgb(255, 175, 55), rgb(255, 98, 98));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+@media screen and (width < 1500px)  {
+
+}
+
+@media screen and (width < 1000px) {
+  .photo{
+    width: 100%;
+  }
+  .imageRight{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 40px;/* ou "contain" si vous voulez voir toute l'image */
+  }
+  .imageLeft{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    
+}
+.boost{
+  font-size: 30px;
+}
+.normal{
+  font-size: 30px;
+}
+}

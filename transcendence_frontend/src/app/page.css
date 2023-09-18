@@ -1,0 +1,43 @@
+.btn{
+  position:absolute;
+  top:50%;
+  left:50%;
+  border-radius : 3em;
+  padding:1.2em 1em;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(90deg,#3e56a7,#04acff,#aaeaea,#1a60e1,#0f72a0,#3e56a7,#14accc);
+  background-size:400%;
+}
+.btn-1{
+  letter-spacing:.2em;
+  font-weight:600;
+  font-size: 1.5em;
+  padding:.7em 1.9em;
+  background-color:black;
+  font-family: 'Raleway', sans-serif;
+  text-transform: Uppercase;
+  color:white;
+  border-radius : 1.5em;
+  text-align:center;
+  text-decoration:none;
+}
+.btn:hover{
+  animation: animate 3s ease-in-out infinite;
+}
+.btn-1:hover{
+  text-shadow:0 0 1.0em rgba(255,255,255,0.8);
+}
+@keyframes animate{
+  0%{
+    background-position : 0%;
+    box-shadow: 0 0 -1.0em hsla(192, 100%, 50%, 0.329);
+  }
+  50%{
+    background-position: 50%;
+    box-shadow: 0 0 1.8em #03c4ff7c;
+  }
+  100%{
+    background-position: 100%;
+    box-shadow: 0 0 -1.0em #3e56a750;
+  }
+}

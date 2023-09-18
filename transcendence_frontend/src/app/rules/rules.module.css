@@ -1,0 +1,241 @@
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+}
+.all_rules{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	font-weight: 600;
+    width: 88%;
+    height: 95%;
+    background-color: aliceblue;
+    border-radius: 40px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 0px 52px 0 rgba(5, 197, 255, 0.173);
+    backdrop-filter: blur( .5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid #0099ff;
+}
+.all_rules_title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    text-align: justify;
+	background: linear-gradient(to right, #00cefc 0%, rgb(0, 94, 255) 60%, #00cefc 100%);
+    -webkit-background-clip: text; /* Applique le dégradé seulement à la zone de texte */
+    color: transparent;
+	margin-bottom: 20px;
+}
+.all_rules_textRules{
+    align-items: center;
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: justify;
+    color : rgb(255, 255, 255);
+}
+
+/* styles.module.css */
+.gradientText {
+    background: linear-gradient(to right, #00cefc 0%, #005eff 60%, #00cefc 100%);
+    -webkit-background-clip: text; /* Applique le dégradé seulement à la zone de texte */
+    color: transparent; /* Rend le texte transparent pour montrer le dégradé en arrière-plan */
+}
+
+.gradientText2 {
+	background: linear-gradient(to right, #00cefc 0%, rgb(0, 94, 255) 60%, #00cefc 100%);
+    -webkit-background-clip: text; /* Applique le dégradé seulement à la zone de texte */
+    color: transparent; /* Rend le texte transparent pour montrer le dégradé en arrière-plan */
+	font-size: 40px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+}
+
+
+/* styles.module.css */
+
+.How2Play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	margin-top: 20px;
+	flex-direction: column;
+}
+
+.How2PlayContent {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.How2PlayMode {
+	justify-content:center;
+	display:flex;
+	align-items: center;
+}
+
+.imgMode {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-right: 20px;
+	width: 50%;
+}
+
+.img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.Mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	margin-top: 20px;
+	flex-direction: column;
+}
+
+.modeContainer {
+    display: flex;
+    align-items: center;
+}
+
+.modeText {
+    margin-right: 100px;
+    width: 60%;
+    white-space: normal;
+	align-items: center;
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) and (min-height: 700px) {
+    .all_rules{
+        width: 80%;
+        font-size: 75px;
+        margin-left: 3%;
+    }
+    .all_rules_title{
+        font-size: 75px;
+    }
+    .all_rules_textRules{
+        font-size: 20px;
+		width: 80%;
+
+    }
+	.gradientText2 {
+		font-size: 20px;
+	}
+
+	/*.all_rules_title {
+		font-size: 75px;
+	}*/
+
+	.all_rules_textRules {
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) and (min-height: 700px) {
+    .all_rules {
+        width: 80%;
+        font-size: 75px;
+        margin-left: 3%;
+    }
+    .all_rules_title {
+        font-size: 75px;
+    }
+    .all_rules_textRules {
+        font-size: 20px;
+        width: 80%;
+    }
+    .gradientText2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) and (min-height: 500px) and (max-height: 699px) {
+    .all {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .all_rules {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        height: 85%;
+    }
+    .all_rules_title {
+        font-size: 50px;
+    }
+    .all_rules_textRules {
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .gradientText2 {
+        font-size: 20px;
+    }
+    .imgtext {
+        font-size: 15px;
+    }
+}
+
+@media screen and (width < 999px) and (height < 500px) {
+    .all {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .all_rules {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        height: 85%;
+    }
+    .all_rules_title {
+        font-size: 50px;
+    }
+    .all_rules_textRules {
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .gradientText2 {
+        font-size: 20px;
+    }
+    .imgtext {
+        font-size: 15px;
+    }
+    .imgMode {
+        width: 25%;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    .img {
+        width: 25%;
+        margin-left: 30px;
+    }
+    .modeText {
+        margin-right: 0px;
+    }
+}

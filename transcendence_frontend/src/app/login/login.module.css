@@ -1,0 +1,95 @@
+.profil{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profil_in{
+  position:absolute;
+  top:50%;
+  left:50%;
+  border-radius : 3em;
+  padding:.2em 0.5em;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(90deg,#3e56a7,#04acff,#aaeaea,#1a60e1,#0f72a0,#3e56a7,#14accc);
+  background-size:400%;
+  width: 300px;
+  height: 300px;
+}
+.profil_in2{
+  letter-spacing:.2em;
+  font-weight:600;
+      font-size: 1.5em;
+      padding:.6em 1.6em;
+      background-color:black;
+      font-family: 'Raleway', sans-serif;
+      text-transform: Uppercase;
+      color:white;
+      border-radius : 1.5em;
+      text-align:center;
+      text-decoration:none;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+}
+
+
+
+
+
+.profil_in2_button{
+text-decoration: none;
+color:white;
+text-align:center;
+text-decoration:none;
+letter-spacing:.2em;
+font-weight:600;
+}
+.profil_in2_button:hover{
+  cursor: pointer;
+  letter-spacing:20px;
+}
+
+.profil_in2_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.profil_in:hover{
+  animation: animate 3s ease-out infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-position : 0%;
+    box-shadow: 0 0 -1.0em hsla(192, 100%, 50%, 0.329);
+  }
+  50%{
+    background-position: 50%;
+    box-shadow: 0 0 1.8em #03c4ff7c;
+  }
+  100%{
+    background-position: 100%;
+    box-shadow: 0 0 -1.0em #3e56a750;
+  }
+}
+
+@keyframes text-animate{
+  0%{
+    background-position : 0%;
+    box-shadow: 0 0 -1.0em hsla(192, 100%, 50%, 0.329);
+  }
+  50%{
+    background-position: 50%;
+    box-shadow: 0 0 1.8em #03c4ff7c;
+  }
+  100%{
+    background-position: 100%;
+    box-shadow: 0 0 -1.0em #3e56a750;
+  }
+}

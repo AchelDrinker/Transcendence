@@ -1,0 +1,111 @@
+/* button.module.css */
+.glowButton {
+  --button-background: transparent;
+  --button-color: #fff;
+  --button-shine-left: rgba(255, 255, 255, 0.1); /* Changed to a white color */
+  --button-shine-right: rgba(200, 255, 255, 0.25); /* Changed to a icy white color */
+  --button-shadow: rgba(0, 217, 255, 0.3);
+  --button-glow-start: rgba(173, 216, 230, 0.25); /* light blue */
+  --button-glow-end: rgba(255, 255, 255, 0.25);
+    appearance: none;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 2vw;
+    font-weight: 500;
+    border-radius: 11px;
+    position: relative;
+    line-height: 24px;
+    cursor: pointer;
+    color: var(--button-color);
+    padding: 0;
+    margin: 0;
+    background: none;
+    z-index: 1;
+    box-shadow: 0 8px 20px var(--button-shadow);
+    background: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 
+    0 8px 32px 0 rgba(255, 255, 255, 0.158), /* ombre existante */
+    0 0 5px rgba(255, 255, 255, 0.199), /* contour blanc interne pour effet brillant */
+    0 0 15px rgba(255, 255, 255, 0.2) inset, /* contour blanc externe pour effet brillant */
+    0 0 10px rgba(173, 216, 230, 0.4), /* ombre bleu clair pour un dégradé */
+    0 0 15px rgba(173, 216, 230, 0.2) inset;
+  }
+   
+  .glowButton span {
+    z-index: 1;
+    position: relative;
+    display: block;
+    padding: 1vw 0;
+    width: 20vw;
+    border-radius: inherit;
+    background-color: var(--button-background);
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+  }
+  
+  .glowButton span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(calc(var(--pointer-x, 0px) - 2vw), calc(var(--pointer-y, 0px) - 2vw)) translateZ(0); 
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at var(--pointer-x, 0px) var(--pointer-y, 0px), var(--button-glow-end), var(--button-glow-start) 70%, transparent);
+    opacity: var(--button-glow-opacity, 0);
+    transition: background var(--button-glow-duration, 1s), opacity var(--button-glow-duration, 1s);
+    filter: blur(2px);
+}
+
+
+.glowButton:hover span:before {
+    --button-glow-opacity: 10;
+    --button-glow-duration: .2s
+}
+.glowButton:hover{
+    --button-background: rgba(255, 255, 255, 0.027);
+    --button-color: #fff;
+    --button-shine-left: rgba(255, 255, 255, 0.1); /* Changed to a white color */
+    --button-shine-right: rgba(200, 255, 255, 0.25); /* Changed to a icy white color */
+    --button-shadow: rgba(0, 217, 255, 0.3);
+    --button-glow-start: rgba(173, 216, 230, 0.25); /* light blue */
+    --button-glow-end: rgba(255, 255, 255, 0.25);
+    --button-glow-opacity: 0.6;
+    --button-glow-duration: .2s
+}
+
+  
+  @keyframes rotate {
+    to {
+      transform: scale(1.05) translateY(-44px) rotate(360deg) translateZ(0);
+    }
+  }
+  .text{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 1vw 0;
+    width: 20vw;
+    border-radius: inherit;
+    background-color: var(--button-background);
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+  }
+  .text:hover{
+    font-size: 1.7vw;
+  }

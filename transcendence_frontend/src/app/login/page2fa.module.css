@@ -1,0 +1,106 @@
+.gradientText {
+    background: linear-gradient(to right, #19cbf8 0%, #7fe3fa 60%, #1cc6e4 100%);
+    -webkit-background-clip: text; /* Applique le dégradé seulement à la zone de texte */
+    color: transparent; /* Rend le texte transparent pour montrer le dégradé en arrière-plan */
+}
+
+.all {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	/*background-color: white;*/
+	height: 100vh;
+	width: 100vw;
+}
+
+.all_title {
+	font-size: 50px;
+	margin-top: 10%;
+	margin-left: 36%;
+	color: #00cefc00;
+
+	/*background: linear-gradient(to right, #19cbf8 0%, #83dff3 60%, #1cc6e4 100%);
+    -webkit-background-clip: text; /* Applique le dégradé seulement à la zone de texte */
+    /*color: transparent;*/
+}
+
+
+
+.all_2fa {
+	color: rgba(216, 191, 216, 0);
+}
+
+.all_2fa_button {
+/*position: relative;*/
+  border-radius : 3em;
+  padding:1.2em 1em;
+  /*transform: translate(-50%,-50%);*/
+  background-image: linear-gradient(90deg,#3e56a7,#04acff,#aaeaea,#1a60e1,#0f72a0,#3e56a7,#14accc);
+  background-size:400%;
+
+}
+.all_2fa_btn{
+	letter-spacing:.2em;
+	font-weight:600;
+	font-size: 1.5em;
+	padding:.7em 1.9em;
+	background-color:black;
+	font-family: 'Raleway', sans-serif;
+	text-transform: Uppercase;
+	color:white;
+	border-radius : 1.5em;
+	text-align:center;
+	text-decoration:none;
+}
+
+.all_2fa_button:hover{
+  animation: animate 3s ease-in-out infinite;
+}
+.all_2fa_btn:hover{
+	text-shadow:0 0 1.0em rgba(255,255,255,0.8);
+  }
+  @keyframes animate{
+	0%{
+	  background-position : 0%;
+	  box-shadow: 0 0 -1.0em hsla(192, 100%, 50%, 0.329);
+	}
+	50%{
+	  background-position: 50%;
+	  box-shadow: 0 0 1.8em #03c4ff7c;
+	}
+	100%{
+	  background-position: 100%;
+	  box-shadow: 0 0 -1.0em #3e56a750;
+	}
+  }
+
+
+.all_2fa_qrcode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 40px;
+}
+
+.all_2fa_input{
+
+	border-radius: 30px 0px 0px 30px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid #48cdeefb;
+	margin-top: 10px;
+}
+
+.all_2fa_valide{
+	border-radius: 0px 30px 30px 0px;
+	border: 2px solid #48cdeefb;
+	background-color: rgba(0, 0, 0, 0);
+	margin-top: 10px;
+}
+
+.all_msg {
+	color: red;
+}

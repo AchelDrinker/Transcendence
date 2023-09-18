@@ -1,0 +1,48 @@
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+}
+.all_live{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    height: 95%;
+    background-color: aliceblue;
+    border-radius: 40px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 0px 52px 0 rgba(5, 197, 255, 0.212);
+    backdrop-filter: blur( .5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid #0099ff;
+}
+
+.all_live_score{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* border-bottom: 1px rgb(0, 153, 255) solid; */
+}
+
+.all_live_score_date {
+    display: fixed;
+    width: 100%;
+    height: 18%;
+    color: aliceblue;
+}
+
+.all_live_score_stats {
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px rgb(0, 153, 255) solid; */
+}

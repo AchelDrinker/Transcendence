@@ -1,0 +1,12 @@
+.container{
+    height:50px;
+    width:400px; 
+    display:flex;
+    /* background-color: aqua; */
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 30px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,241 @@
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+}
+.button_2fa {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0) ;
+	color: white ;
+	border: 2px white solid ;
+	border-radius: 4px;
+	cursor: pointer;
+	height: 20px;
+	width: 100px;
+	margin-left: 20px;
+
+  }
+	.button_2fa:hover {
+		background-color: aliceblue;
+		color: rgb(7, 7, 7);
+	}
+.all_score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 88%;
+    height: 95%;
+    background-color: aliceblue;
+    border-radius: 40px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 0px 52px 0 rgba(5, 197, 255, 0.212);
+    backdrop-filter: blur( .5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border: 1px solid #0099ff;
+}
+
+.all_score_avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom: 1px #0099ff solid;
+}
+.all_score_score{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px rgb(0, 153, 255) solid;
+}
+.all_score_ladder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.all_score_score_date{
+    width: 100%;
+    height: 18%;
+    color: aliceblue;
+}
+.all_score_score_stats{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px rgb(0, 153, 255) solid;
+}
+.all_score_ladder_logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    font-size: 2vw;
+  }
+  
+  .all_score_ladder_logo_rank {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+.all_score_ladder_logo_lvl{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 73px;
+    z-index: 1;
+    color: aliceblue;
+    margin-bottom: 35px;
+}
+.all_score_ladder_logo_img{
+    width: 200px;
+    height: auto;
+}
+.all_score_ladder_exp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.all_score_ladder_exp_bar{
+    z-index: -1;
+    width: 90%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: #0099ff;
+}
+.all_score_ladder_exp_text{
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: aliceblue;
+}
+.blaze{
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 65%;
+	margin-left: 2%;
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1500px)  {
+    .blaze{
+        margin-right: 50%;
+    }
+    .all_score{
+        width: 80%;
+        margin-left: 3%;
+    }
+    .all_score_score_date{
+
+    }
+    .all_score_score_stats{
+
+    }
+    .all_score_ladder_logo{
+
+    }
+    .all_score_ladder_logo_lvl{
+        font-size: 35px;
+        margin-top: 65px;
+    }
+    .all_score_ladder_logo_img{
+        width: 175px;
+        height: 175px;
+    }
+    .all_score_ladder_exp_bar{
+        height: 17%;
+    }
+    .all_score_ladder_exp_text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (width < 1000px) {
+    .handleChangeUsername{
+        width: 50px;
+        font-size: 10px;
+        margin-left: 0px;
+    }
+    .blaze{
+        margin-right: 15%;
+		margin-left: 2%;
+		font-size: 15px;
+	}
+
+    .all{
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .all_score{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        height: 85%;
+    }
+    .all_score_score_date{
+
+    }
+    .all_score_score_stats{
+
+    }
+    .all_score_ladder_logo{
+        margin-left: 30px;
+    }
+    .all_score_ladder_logo_lvl{
+        font-size: 25px;
+        margin-top: 53px;
+    }
+    .all_score_ladder_logo_img{
+        width: 100px;
+        height: 100px;
+    }
+    .all_score_ladder_exp_bar{
+        height: 15%;
+        width: 80%;
+    }
+    .all_score_ladder_exp_text{
+        font-size: 12px;
+    }
+	.button_2fa {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(255, 255, 255, 0) ;
+		color: white ;
+		border: 2px white solid ;
+		border-radius: 4px;
+		cursor: pointer;
+		height: 20px;
+		width: 100px;
+		margin-left: 20px;
+		margin-top: 10px;
+
+	  }
+
+}
