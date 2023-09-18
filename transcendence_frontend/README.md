@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+################################# - FICHIER .ENV - ######################################## 
 
-## Getting Started
+DATABASE_URL=RAILWAY_URL
 
-First, run the development server:
+POSTGRES_USER=RAILWAY_USER
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+POSTGRES_PASSWORD=RAILWAY_PASSWORD
 
-Open [IPSERVER:3000](http://localhost:3000) with your browser to see the result.
+POSTGRES_DATABASE=RAILWAY_DB
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+POSTGRES_HOST=RAILWAY_HOST
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+POSTGRES_PORT=RAILWAY_PORT
 
-## Learn More
+JWT_SECRET=JWT_SECRET
 
-To learn more about Next.js, take a look at the following resources:
+NEXT_PUBLIC_API_URL=http://IP:4000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NEXT_PUBLIC_API_URL_FRONT=http://IP:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+NEXT_PUBLIC_API_URL_CALLBACK=http://IP:4000/login/callback
 
-## Deploy on Vercel
+API_U_ID=U_ID
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+API_S_SECRET=S_SECRET
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+NEXT_PUBLIC_API_URI=API_URI
