@@ -1,0 +1,67 @@
+generator client {
+    provider      = "prisma-client-js"
+    binaryTargets = ["native", "debian-openssl-1.1.x", "debian-openssl-3.0.x", "linux-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model User {
+    id                  Int       @id @default(autoincrement())
+    authentification    Boolean
+    imageUrl            String?   
+    twoFactorEnabled    Boolean   @default(false)
+    twoFactorAuthSecret String?  
+    username            String    @db.VarChar(100)
+    games1              Game[]    @relation("games1")
+    games2              Game[]    @relation("games2")
+    Message             Message[]
+    friends             Int[]
+    blocked             Int[]
+    inGame          Boolean?    @default(false)
+    rank                Int?      @default(0)
+    authConfirmToken    String?
+}
+
+
+model Game {
+    id         Int      @id @default(autoincrement())
+    user1Id    Int
+    user2Id    Int
+    score      String
+    mode       String
+    match_date DateTime
+    user1      User     @relation("games1", fields: [user1Id], references: [id])
+    user2      User     @relation("games2", fields: [user2Id], references: [id])
+}
+
+model Message {
+    id        Int      @id @default(autoincrement())
+    sender    Int
+    date      DateTime @db.Timestamp(6)
+    channelId Int
+    userId    Int?
+    message   String   @db.VarChar
+    username  String   @db.VarChar
+    imageUrl  String   @db.VarChar
+    User      User?    @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FK_84d835397d0526ad7d04ef354e1")
+    Channel   Channel  @relation(fields: [channelId], references: [id])
+}
+
+model Channel {
+    id              Int       @id @default(autoincrement())
+    name            String    @db.VarChar
+    password        String?   @db.VarChar
+    isprivate       Boolean   @default(false)
+    searchedchannel String?
+    dm              Boolean   @default(false)
+    messages        Message[]
+    userId          Int
+    admins          Int[] // Tableau contenant les userID des admins
+    members         Int[] // Tableau contenant les userID des membres
+    owner           Int[] // Tableau contenant les userID des owners
+    banned          Int[] // Tableau contenant les userID des bannis
+    muted           Int[] // Tableau contenant les userID des muets
+}

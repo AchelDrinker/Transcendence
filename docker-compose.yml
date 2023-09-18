@@ -1,0 +1,57 @@
+version: '3.9'
+networks:
+  backend:
+services:
+
+  front:
+    build: ./transcendence_frontend
+    ports:
+      - '3000:3000'
+    networks:
+      - backend
+    depends_on:
+      - back
+
+  back:
+    build: ./transcendence_backend
+    ports:
+      - '4000:4000'
+    networks:
+      - backend
+    depends_on:
+      - db
+
+  pgadmin:
+    container_name: pgadmin4
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - '8080:80'
+    networks:
+      - backend
+    depends_on:
+      - db
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: oJzlKrGNlIa8N5stYL2G
+      POSTGRES_DB: railway
+    ports:
+      - "5959:5959" 
+    networks:
+      - backend
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+
+volumes:
+  pgadmin_data:
+  db_data:
