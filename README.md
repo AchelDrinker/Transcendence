@@ -1,6 +1,6 @@
-Transcendence : 100/100 with 3 stars
-
 # Projet ft_transcendence
+
+Evaluation : 100/100 (3 outstanding projects)
 
 Bienvenue sur le projet Transcendence ! Le classique jeu de Pong dans une expérience en ligne renouvelée, où les joueurs peuvent s'affronter, chatter en temps réel, et plus encore, le tout dans un environnement sécurisé et moderne.
 
