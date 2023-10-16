@@ -6,7 +6,7 @@ Bienvenue sur le projet Transcendence ! Le classique jeu de Pong dans une expér
 
 ## 📖 Sommaire
 
-- [Fonctionnalités](#fonctionnalités)
+- [Fonctionnalités](##fonctionnalités)
 - [Technologies utilisées](#technologies-utilisées)
 - [Installation](#installation)
 - [Utilisation](#utilisation)
