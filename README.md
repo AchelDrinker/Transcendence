@@ -75,3 +75,17 @@ Gestion sécurisée des secrets : Toutes les informations sensibles sont stocké
 
 ## 🤝 Contributions
 Si ce projet vous a aidé, merci de mettre une étoile !
+
+
+## 📷 Contributions
+![Login](https://github.com/AchelDrinker/Transcendence/assets/99177027/a0d3b588-8c7b-4c36-a930-bacde79472f7)
+
+![Game](https://github.com/AchelDrinker/Transcendence/assets/99177027/13e8779d-8fd3-4e14-8dda-d88fedad2eb7)
+
+![profil + chat](https://github.com/AchelDrinker/Transcendence/assets/99177027/4ca90b21-e671-4dc2-9218-4aafeb39b82b)
+
+
+https://github.com/AchelDrinker/Transcendence/assets/99177027/30eb5655-c191-494a-ab75-1084dcc2562e
+
+
+
